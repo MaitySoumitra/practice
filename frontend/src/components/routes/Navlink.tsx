@@ -5,6 +5,9 @@ export const Navlink = () => {
         
         <NavLink to='/' className={({isActive})=>isActive?"font-bold text-none":""}>Home</NavLink>
         <NavLink to='about' className={({isActive})=>isActive?"font-bold text-none":""}>About</NavLink>
+         <NavLink to='products' className={({isActive})=>isActive?"font-bold text-none":""}>Products</NavLink>
+         
+         
     </div>
   )
 }
