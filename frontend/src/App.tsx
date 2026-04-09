@@ -1,4 +1,5 @@
 
+import { CustomSlider } from "./components/customSlider"
 import { DragDrop } from "./components/DragDrop"
 
 import { MenuDelayKeyboard } from "./components/MenuDelayKeyboard"
@@ -13,7 +14,8 @@ function App() {
     
     return (
         <>
-        <SearchProducts/>
+        <CustomSlider/>
+        {/* <SearchProducts/> */}
         {/* <NavBar/> */}
         {/* <TodoList/> */}
         {/* <MenuDelayKeyboard/> */}
