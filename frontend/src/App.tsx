@@ -14,8 +14,8 @@ function App() {
     
     return (
         <>
-        <CustomSlider/>
-        {/* <SearchProducts/> */}
+        {/* <CustomSlider/> */}
+        <SearchProducts/>
         {/* <NavBar/> */}
         {/* <TodoList/> */}
         {/* <MenuDelayKeyboard/> */}
