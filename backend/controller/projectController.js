@@ -77,3 +77,24 @@ const getProjectById=async(req, res)=>{
         return res.status(500).json({message: "Internal server error"})
     }
 }
+const addMemberToProject=async(req, res)=>{
+    const {projectId}=req.params
+    const {memberId}=req.body
+    try{
+        const project=await Project.findById(projectId)
+        if(!project) return res.status(404).json({message:"Project not found"})
+        if(project.members.includes(memberId)) return res.status(403).json({message:"Member already exists"})
+        project.members.push(memberId)
+        await project.save()
+        await User.findByIdAndUpdate(memberId, {
+            $addToSet: {memberOfProjects:project._id}
+        })
+        await project.populate('members', 'name email role')
+        res.status(200).json()
+
+    }
+    catch(error){
+        console.log("something went wrong", error)
+        return res.status(500).json({message: "Internal server error"})
+    }
+}

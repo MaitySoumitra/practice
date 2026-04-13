@@ -1,0 +1,18 @@
+const mongoose = require('mongoose')
+const { Schema } = mongoose
+const ColumnSchema = new Schema({
+    name: {
+        type: String,
+        enum: ["Todo" | "In Progress" | "Delay" | "Completed"],
+        required: true
+    },
+    board:{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Board',
+        required: true
+    },
+    order:{
+        type: Number
+    }
+})
+module.exports=mongoose.model('Column', ColumnSchema)
