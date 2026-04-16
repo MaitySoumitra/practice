@@ -1,9 +1,27 @@
 from pydantic import BaseModel
+from enum import Enum
+from fastapi import FastAPI
 
-class Fruit(BaseModel):
+app=FastAPI()
+
+class RoleEnum(str, Enum):
+    super_admin="super-admin"
+    admin="admin"
+    developer="developer"
+    designer="designer"
+    qa="qa"
+
+
+class User(BaseModel):
     name:str
-    age:int
-    address:str
+    email:str
+    password:str
+    role: RoleEnum  
 
-print(Fruit(name="Soumitra",age="24", address="kolkata")) 
+@app.post("/employee")
+
+def create_employee(emp:User):
+    return emp
+
+print(User(name="Soumitra", email="maity@gmail.com", password="123456", role=RoleEnum.super_admin))
 # in pydantic model it will auto convert to "24" -> 24
