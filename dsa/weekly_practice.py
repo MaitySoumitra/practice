@@ -53,6 +53,24 @@ def perfect_number(num):
                 divisor_sum+=num//i
     return divisor_sum==num
 print(perfect_number(6))
+
+
+for i in range(0, 9, 2):
+    print(i)
+
+
+def divisible_nondivisible(n, m):
+    divisible_num=[]
+    non_divisible_num=[]
+    for i in range(1, n+1):
+        if i%m==0:
+            divisible_num.append(i)
+        else:
+            non_divisible_num.append(i)
+    return sum(non_divisible_num)-sum(divisible_num)
+print(divisible_nondivisible(10,3))
+
+
         
 
    
