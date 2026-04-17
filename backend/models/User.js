@@ -13,7 +13,7 @@ const userSchemna = new Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: "Profile"
     },
-    boardOMembers: {
+    boardOfMembers: {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Board"
     }
