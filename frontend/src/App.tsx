@@ -1,4 +1,5 @@
 
+import { Count } from "./components/Count"
 import { CustomSlider } from "./components/customSlider"
 import { DragDrop } from "./components/DragDrop"
 
@@ -16,13 +17,13 @@ function App() {
         <>
         {/* <CustomSlider/> */}
         {/* <SearchProducts/> */}
-        <NavBar/>
+        {/* <NavBar/> */}
         {/* <TodoList/> */}
         {/* <MenuDelayKeyboard/> */}
         {/* <TabQueryParams/> */}
         {/* <DragDrop/>
         <DragDropPractice/> */}
- 
+        <Count/>
         </>
     )
 }
