@@ -1,8 +1,7 @@
 
 import { Count } from "./components/Count"
-import { CustomSlider } from "./components/customSlider"
+import { CustomSlider } from "./components/CustomSlider"
 import { DragDrop } from "./components/DragDrop"
-
 import { MenuDelayKeyboard } from "./components/MenuDelayKeyboard"
 import { NavBar } from "./components/NavBar"
 import { SearchProducts } from "./components/SearchProducts"
