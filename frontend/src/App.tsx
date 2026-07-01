@@ -1,4 +1,5 @@
 
+import { ApplyCupon } from "./components/ApplyCupon"
 import { Count } from "./components/Count"
 import { CustomSlider } from "./components/CustomSlider"
 import { DragDrop } from "./components/DragDrop"
@@ -24,7 +25,8 @@ function App() {
         {/* <DragDrop/>
         <DragDropPractice/> */}
         {/* <Count/> */}
-        <SetPractice/>
+        {/* <SetPractice/> */}
+        <ApplyCupon/>
         </>
     )
 }
