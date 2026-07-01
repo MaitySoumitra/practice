@@ -1,18 +1,27 @@
 import { useEffect, useState } from "react"
 
+interface productsType{
+    id:number,
+    title:string,
+    description:string,
+    price:number,
+    images:string,
+    discountPercentage:number
+
+}
 
 export const SearchProducts = () => {
     const [search, setSearch] = useState("")
-    const [products, setProducts]=useState([])
+    const [products, setProducts]=useState<productsType[]>([])
     const [sortBy, setSortBy]=useState("A-Z")
 
-    const sortFunction={
+    const sortFunction:Record<string, (a:productsType, b:productsType)=>number>={
         "A-Z":(a,b)=>a.title.localeCompare(b.title),
         "Z-A":(a,b)=>b.title.localeCompare(a.title),
         PRICE_HIGH_TO_LOW:(a,b)=>a.price-b.price,
         PRICE_LOW_TO_HIGH:(a,b)=>b.price-a.price
-
     }
+
     const filterProducts = products.filter(product =>
         product.title.toLowerCase().includes(search.toLocaleLowerCase())
     )
@@ -50,8 +59,7 @@ export const SearchProducts = () => {
                         <div className=" flex items-end gap-2">
                         <p className="font-bold text-base">Rs: { p.price - (p.price * (p.discountPercentage / 100))}/pcs</p>
                         <p className="text-sm line-through"> {p.price}/pcs </p>
-                        </div>
-                       
+                        </div>                       
                     </div>
                 ))}
             </div>

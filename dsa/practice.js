@@ -48,3 +48,29 @@ function removeDuplicateArray(arr){
     return result
 }
 console.log(removeDuplicateArray([1,2,3,4,5,1,2,3]))
+
+function TotalWordCount(str){
+    count=0
+    for(let i=0; i<str.length; i++){
+        if(str[i]){
+            count++
+        }
+    }
+    return count
+}
+console.log(TotalWordCount("ajhdi8eqxciuhqodw"))
+
+function charFrequency(str){
+    freq={}
+    for(let i=0; i<str.length; i++){
+        let ch=str[i]
+        if(freq[ch]){
+            freq[ch]++
+        }
+        else{
+            freq[ch]=1
+        }
+    }
+    return freq
+}
+console.log(charFrequency("ajhdieqxciuhqodw"))
