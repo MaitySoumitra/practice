@@ -25,15 +25,3 @@ function checkPalindrome(str){
     return true
 }
 console.log(checkPalindrome("madam"))
-
-function checkPalindromeFor(str){
-    for(let i=0; i<str.length; i++){
-        for(j=0; j<str.length-i-1; j++){
-            if(str[i]!=str[j]){
-                return false
-            }
-        }
-    }
-    return true
-}
-console.log(checkPalindromeFor("madam"))

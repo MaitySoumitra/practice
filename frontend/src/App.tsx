@@ -14,6 +14,8 @@ import { SetPractice } from "./components/SetPractice"
 import { TabQueryParams } from "./components/TabQueryParams"
 import { TodoList } from "./components/TodoList"
 import { TodoPractice } from "./components/TodoPractice"
+import { TodoPracticeagain } from "./components/TodoPracticeagain"
+import { TodoPracticeNew } from "./components/TodoPracticeNew"
 
 
 function App() {
@@ -33,7 +35,9 @@ function App() {
         {/* <Accordian/> */}
         {/* <AccordianPractice/> */}
         {/* <SearchPractice/> */}
-        <ModalOpen/>
+        {/* <ModalOpen/> */}
+        {/* <TodoPracticeNew/> */}
+        <TodoPracticeagain/>
         </>
     )
 }

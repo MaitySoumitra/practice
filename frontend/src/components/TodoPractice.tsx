@@ -46,7 +46,7 @@ export const TodoPractice = () => {
                 <option value="Active">Active</option>
                 <option value="Completed">Completed</option>
             </select>
-            <div className="space-y-2">
+            <div className="space-y-2"> 
                 {filterTodos.map(todo => (
                     <div className="space-y-2" key={todo.id}>
                         <div className="space-x-2">
