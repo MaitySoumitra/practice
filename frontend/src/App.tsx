@@ -22,6 +22,7 @@ function App() {
     
     return (
         <>
+        <div className="w-full">
         {/* <CustomSlider/> */}
         {/* <SearchProducts/> */}
         {/* <NavBar/> */}
@@ -38,6 +39,7 @@ function App() {
         {/* <ModalOpen/> */}
         {/* <TodoPracticeNew/> */}
         <TodoPracticeagain/>
+        </div>
         </>
     )
 }

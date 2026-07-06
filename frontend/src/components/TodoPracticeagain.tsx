@@ -34,12 +34,13 @@ export const TodoPracticeagain = () => {
         return true
     })
     return (
-        <div>
+         <div className="w-full">
+        <div className="max-w-[1440px] mx-auto flex flex-col items-center space-y-6 px-4 py-6">
             <div className="space-x-3">
-                <input type="text" value={input} onChange={(e) => setInput(e.target.value)} />
+                <input className="p-2 border shadow-md rounded-lg" type="text" value={input} onChange={(e) => setInput(e.target.value)} />
                 <button onClick={addTodo}>Add todo</button>
             </div>
-            <select onChange={(e) => setFilter(e.target.value as "All" | "Active" | "Completed")}>
+            <select className="p-1 border rounded-lg" onChange={(e) => setFilter(e.target.value as "All" | "Active" | "Completed")}>
                 <option value="All">All</option>
                 <option value="Active">Active</option>
                 <option value="Completed"> Completed </option>
@@ -51,6 +52,7 @@ export const TodoPracticeagain = () => {
                         <button onClick={()=>deleteTodo(todo.id)}>❌</button>
                     </div>
                 ))}
+            </div>
             </div>
         </div>
     )
