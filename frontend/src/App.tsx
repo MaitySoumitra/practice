@@ -8,6 +8,7 @@ import { DragDrop } from "./components/DragDrop"
 import { MenuDelayKeyboard } from "./components/MenuDelayKeyboard"
 import { ModalOpen } from "./components/ModalOpen"
 import { NavBar } from "./components/NavBar"
+import { NewTodo } from "./components/NewTodo"
 import { SearchPractice } from "./components/SearchPractice"
 import { SearchProducts } from "./components/SearchProducts"
 import { SetPractice } from "./components/SetPractice"
@@ -38,7 +39,8 @@ function App() {
         {/* <SearchPractice/> */}
         {/* <ModalOpen/> */}
         {/* <TodoPracticeNew/> */}
-        <TodoPracticeagain/>
+        {/* <TodoPracticeagain/> */}
+        <NewTodo/>
         </div>
         </>
     )
