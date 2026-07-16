@@ -1,7 +1,4 @@
  function greedAlgorithm(resolved, required, k){
-    if(resolved.length!==required.length){
-        throw new Error("Array nust have same length")
-    }
     let needed=[]
     for(let i=0; i<resolved.length;i++){
         let diff=resolved[i]-required[i]
