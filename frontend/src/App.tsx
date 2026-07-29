@@ -1,6 +1,8 @@
 
 import { Accordian } from "./components/Accordian"
 import { AccordianPractice } from "./components/AccordianPractice"
+import { AnimatedIcon } from "./components/AnimatedIcon"
+import { AnimatedIconPractice } from "./components/AnimatedIconPractice"
 import { ApplyCupon } from "./components/ApplyCupon"
 import { Count } from "./components/Count"
 import { CustomSlider } from "./components/CustomSlider"
@@ -17,7 +19,7 @@ import { TodoList } from "./components/TodoList"
 import { TodoPractice } from "./components/TodoPractice"
 import { TodoPracticeagain } from "./components/TodoPracticeagain"
 import { TodoPracticeNew } from "./components/TodoPracticeNew"
-
+import './App.css'
 
 function App() {
     
@@ -40,7 +42,8 @@ function App() {
         {/* <ModalOpen/> */}
         {/* <TodoPracticeNew/> */}
         {/* <TodoPracticeagain/> */}
-        <NewTodo/>
+        {/* <NewTodo/> */}
+        <AnimatedIconPractice/>
         </div>
         </>
     )
