@@ -20,6 +20,8 @@ import { TodoPractice } from "./components/TodoPractice"
 import { TodoPracticeagain } from "./components/TodoPracticeagain"
 import { TodoPracticeNew } from "./components/TodoPracticeNew"
 import './App.css'
+import { AddTocart } from "./components/AddTocart"
+import { Notification } from "./components/Notification"
 
 function App() {
     
@@ -43,7 +45,9 @@ function App() {
         {/* <TodoPracticeNew/> */}
         {/* <TodoPracticeagain/> */}
         {/* <NewTodo/> */}
-        <AnimatedIconPractice/>
+        {/* <AnimatedIconPractice/> */}
+        <AddTocart/>
+        <Notification/>
         </div>
         </>
     )
