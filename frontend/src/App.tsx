@@ -22,6 +22,7 @@ import { TodoPracticeNew } from "./components/TodoPracticeNew"
 import './App.css'
 import { AddTocart } from "./components/AddTocart"
 import { Notification } from "./components/Notification"
+import { UserActive } from "./components/UserActive"
 
 function App() {
     
@@ -46,8 +47,9 @@ function App() {
         {/* <TodoPracticeagain/> */}
         {/* <NewTodo/> */}
         {/* <AnimatedIconPractice/> */}
-        <AddTocart/>
-        <Notification/>
+        {/* <AddTocart/> */}
+        {/* <Notification/> */}
+        <UserActive/>
         </div>
         </>
     )
